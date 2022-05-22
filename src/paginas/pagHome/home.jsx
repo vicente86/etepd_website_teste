@@ -11,9 +11,15 @@ export default function Home(){
       <NavBar/>
       <s.TituloHome>Página home</s.TituloHome>
      
-      <s.SessionHome1>
+      <s.SessionHome>
+        <s.TituloHome>Sessão 1</s.TituloHome>
         <img src={Logo} alt="imagem aqui" />
-      </s.SessionHome1>
+      </s.SessionHome>
+
+      <s.SessionHome>
+        <s.TituloHome>Sessão 2</s.TituloHome>
+        
+      </s.SessionHome>
       
     </ContainerGeral>
   )

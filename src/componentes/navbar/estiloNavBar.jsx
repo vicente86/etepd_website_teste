@@ -6,21 +6,26 @@ export const Nav = styled.nav`
   ul {
     list-style:none;
     display: flex;
-    padding: 30px 10px;
+    padding: 10px 10px;
+    align-items: center;
   }
   ul li {
     color:#000;
-    padding: 5px 10px;
+    padding: 0px 10px;
     cursor: pointer;
 
     .estiloLink {
       text-decoration: none;
       color:white;
-      transition: all 0.8s ease;
+      transition:0.8s all ease-in;
     }
     .estiloLink:hover {
       font-weight: bolder;
-      transition: all 0.8s ease;
+      transition:0.8s all ease-out;
+    }
+    img {
+      width: 93px;
+      height: 49px;
     }
   }
 

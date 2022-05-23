@@ -9,6 +9,7 @@ export default function NavBar(){
       <ul>
         <li><Link className='estiloLink' to={"/"}><img src={Logo} /></Link></li>
         <li><Link className='estiloLink' to={"/"}>Home</Link></li>
+        <li className='estiloLink'>Sobre</li>
       </ul>
     </s.Nav>
   )

@@ -1,7 +1,7 @@
-import * as s from './estilohome'
-import { ContainerGeral } from '../../estiloGeral/estilosGerais'
-import NavBar from '../../componentes/navbar/navbar'
-import Logo from '../../componentes/imagens/logoetepd.png'
+import * as s from './estilohome';
+import { ContainerGeral } from '../../estiloGeral/estilosGerais';
+import NavBar from '../../componentes/navbar/navbar';
+import Logo from '../../imagens/logoetepd.png';
 
 export default function Home(){
 

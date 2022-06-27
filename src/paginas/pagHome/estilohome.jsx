@@ -1,70 +1,59 @@
 import styled from 'styled-components'
 
-export const SessionHome = styled.section`
-  background-color: #c5c5c5;
-  width: 100%;
-  min-height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  margin-bottom: 10px; 
-  img{
-    width: 250px;
-    height: 69px;
-  }
-`;
-
+// Carrossel
 export const ContainerCarrossel = styled.div`
-  overflow-x: hidden;
-  .containersRadios {
-    width: 100vw;
-    background-color: #00000044;
-    padding: 10px 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: relative;
-  }
-
-  .containersRadios input{
-    margin-right: 10px;
-  }
-
-  /* #radio1{
-    
-    position: absolute;
-    left: 45%;
-  }
-  #radio2{
-    
-    position: absolute;
-    left: 50%;
-  }
-  #radio3{
-    
-    position: absolute;
-    left: 55%;
-  } */
-
-  .slide img{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  
+  #imgCS {
     width: 100vw;
     height: auto;
+    transition: all 2s ease;
   }
-
-  .slides {
-    width: 100vw;
-    display: flex;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-  }
-
 
 `;
 
+export const SessaoInfor1 = styled.section`
+  width: 100vw;
+  height: 600px;
+`;
 
-export const TituloHome = styled.h1`
-  color: #000;
-  text-align: center;
-  padding: 10px 0;
-  font-family: PoiretOne;
-`
+export const SessaoCursos = styled.section`
+  width: 100vw;
+  height: 600px;
+  background-color: #0B3C76;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+
+  img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 45%;
+    top:-80px;
+  }
+
+  /* .curso1{
+    margin-right: 100px;
+  } */
+
+  .curso1, .curso2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ddd;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 200px;
+  }
+
+  .curso1 h3, .curso2 h3 {
+    text-align: center;
+    margin-top: 80px;
+  }
+
+`;

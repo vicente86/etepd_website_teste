@@ -54,7 +54,7 @@ export const Nav = styled.nav`
       position: absolute;
       top: 30px;
       right: 50px;
-      z-index: 0;
+      z-index: 1000;
     }
   }
 

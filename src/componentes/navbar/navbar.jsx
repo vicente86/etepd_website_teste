@@ -2,6 +2,7 @@ import * as s from './estiloNavBar'
 import { Link } from 'react-router-dom'
 import Logo from '../../imagens/logoetepd01.png'
 import Seta from '../../imagens/setaa2.png'
+import AcountIcon from '../../imagens/account_circle.svg'
 
 export default function NavBar(){
 
@@ -20,12 +21,11 @@ export default function NavBar(){
         <Link to={"/"}><img src={Logo} /></Link>
       </div>
 
-      <div>
+      <div className='containerlistaul'>
         <ul>
           <li><Link className='estiloLink' to={"/"}>Home</Link></li>
           <li><Link className='estiloLink' to={"/sobre"}>Sobre</Link></li>
           <li className='estiloLink' >Eventos</li>
-          <li className='estiloLink'>Projetos</li>
           <li className='estiloLink dropdown1' onClick={() => listaMais()}> Mais <img src={Seta} id='imgseta'/>
           </li>
           <s.UlMais id='ulmais'>
@@ -34,7 +34,9 @@ export default function NavBar(){
               <li className='estiloLink2'>Ajuda</li>
               <li className='estiloLink2'>Termos e Privacidade</li>
           </s.UlMais>
+          <li className='liimgconta'><img src={AcountIcon} alt="ícone de usuário" /></li>
         </ul>
+        
       </div>
     </s.Nav>
   )

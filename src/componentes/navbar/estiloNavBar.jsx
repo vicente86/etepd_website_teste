@@ -68,6 +68,16 @@ export const Nav = styled.nav`
     transform: rotate(-180deg);
     transition: all 1s ease;
   }
+
+  .liimgconta {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .liimgconta img{
+    width: 3rem;
+    height: 3rem;
+  }
 `;
 
 export const UlMais = styled.ul`

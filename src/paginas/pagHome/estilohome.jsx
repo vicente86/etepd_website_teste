@@ -16,7 +16,29 @@ export const ContainerCarrossel = styled.div`
 
 export const SessaoInfor1 = styled.section`
   width: 100vw;
-  height: 600px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0px 15px 0px;
+
+  h2, h3 {
+    text-align: center;
+    padding: 15px 0px;
+    margin: 0px;
+    font-family: PoiretOne;
+    font-weight: bolder;
+  }
+  h3 {
+    background-color:#587FEB;
+    color: #fff;
+    margin: 10px 0px;
+  }
+  ul {
+    padding-left: 20px;
+  }
+  ul ul {
+    padding: 10px;
+  }
 `;
 
 export const SessaoCursos = styled.section`

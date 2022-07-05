@@ -4,7 +4,7 @@ export const ContainerFormCad = styled.div`
   width: 300px;
   height: 310px;
   box-shadow: 0px 0px 10px #aaa;
-  background-color: #C5D8DA;
+  background-color: #000000aa;
   border-radius: 10px;
   margin:150px auto;
   display: flex;
@@ -17,6 +17,16 @@ export const ContainerFormCad = styled.div`
     height: 3rem;
   }
   
+  #janelaLogin {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000aa;
+    width: 350px;
+    height: 400px;
+    margin: 200px auto 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #999;
+  }
 
   .form {
     display: flex;

@@ -102,3 +102,36 @@ export const UlMais = styled.ul`
   }
 
 `;
+
+export const UlUser = styled.ul`
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 5px;
+  top: 110px;
+  width: 200px;
+  background-color: #fff;
+  box-shadow:0px 0px 4px #aaa;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 1s ease;
+
+  .estiloLink2 {
+    text-decoration: none;
+    padding:20px 5px;
+    color: #386074;
+    font-weight: bold;
+  }
+
+  li {
+    height: 30px;
+    width: 100%;
+  }
+
+  .estiloLink3 {
+    text-decoration: none;
+    color: #386074;
+    font-weight: bold;
+  }
+`;

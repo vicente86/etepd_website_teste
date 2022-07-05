@@ -35,8 +35,8 @@ export default function Cadastro(){
         alert("Já existe um usuário com este nome e com este email")
       }else{
         Axios.post("http://localhost:3001/cadastrar_usuario", {
-        nome: values.nome,
-        email: values.email,
+        nome: values.nome.toLowerCase(),
+        email: values.email.toLowerCase(),
         senha: values.senha
         })
         

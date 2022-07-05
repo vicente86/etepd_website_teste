@@ -11,17 +11,30 @@ export default function NavBar(){
 
   let localEmail = "";let localNome = "";let localCodigo = "";
 
-  try { 
-    localNome = localStorage.getItem("nomeUsu");
-    localCodigo = localStorage.getItem("tipoUsu");
-    localEmail = localStorage.getItem("emailUsu");
-  } catch (error) {}
+  const  [ taLogado , setTaLogado ] = useState(false);
+
+  useEffect(() => {
+    try { 
+      localNome = localStorage.getItem("nomeUsu");
+      localCodigo = localStorage.getItem("tipoUsu");
+      localEmail = localStorage.getItem("emailUsu");
   
+      
+      if(localEmail.indexOf('@') !== -1){
+        console.log("Tem alguma coisa")
+        setTaLogado(true);
+      }
+  
+    } catch (error) {}
+  },[taLogado])
+
   function deslogar(){
     localStorage.setItem("nomeUsu", "");
     localStorage.setItem("emailUsu", "");
     localStorage.setItem("tipoUsu", "");
     
+    setTaLogado(false)
+
     localCodigo = "";
     localCodigo = "";
     localNome = "";
@@ -62,7 +75,7 @@ export default function NavBar(){
           </s.UlMais>
           <li className='liimgconta' onClick={() => listaConta()}><img src={AcountIcon} alt="ícone de usuário" /></li>
           {
-            localEmail !== "" ?
+            taLogado !== false ?
           <s.UlUser id='uluser'>
               <li><Link to={""} className='estiloLink3'>Conta</Link></li>
               <li><Link to={""} className='estiloLink3'>Editar conta</Link></li>

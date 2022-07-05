@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+// import { Raio } from '../../imagens/raio.svg';
+// import { Raio2 } from '../../imagens/raio2.png';
 
 // Carrossel
 export const ContainerCarrossel = styled.div`
@@ -21,6 +23,14 @@ export const SessaoInfor1 = styled.section`
   flex-direction: column;
   padding: 15px 0px 15px 0px;
 
+  .containerUl {
+    width: 97%;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px #888 ;
+    margin: 0px auto;
+
+  }
+
   h2, h3 {
     text-align: center;
     padding: 15px 0px;
@@ -35,6 +45,11 @@ export const SessaoInfor1 = styled.section`
   }
   ul {
     padding-left: 20px;
+    list-style: none;
+  }
+  ul li {
+    padding: 7px;
+    
   }
   ul ul {
     padding: 10px;

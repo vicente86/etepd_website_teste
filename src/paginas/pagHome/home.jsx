@@ -54,7 +54,7 @@ export default function Home(){
 
         <div><h2>Subsequênte</h2></div>
         <div><h3>Serviços que os alunos podem obter da secretaria</h3></div>
-        <div>
+        <div className='containerUl'>
           <ul>
             <li>Informações sobre - carteira de meia passagem/vem livre</li>
             <li>Declaração de vínculo</li>
@@ -71,7 +71,7 @@ export default function Home(){
         </div>
 
         <div><h3>Professores(as) do Subsequente</h3></div>
-        <div>
+        <div className='containerUl'>
           <ul>
             <li>Desenvolvimento de Sistemas</li>
             <ul>
@@ -96,7 +96,7 @@ export default function Home(){
         </div>
 
         <div><h3>Ambientes</h3></div>
-        <div>
+        <div className='containerUl'>
           <ul>
             <li>Térreo</li>
             <ul>

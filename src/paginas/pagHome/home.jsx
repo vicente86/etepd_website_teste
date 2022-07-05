@@ -52,7 +52,7 @@ export default function Home(){
 
       <s.SessaoInfor1>
 
-        <div><h2>Subsequênte</h2></div>
+        <div><h1>Subsequênte</h1></div>
         <div><h3>Serviços que os alunos podem obter da secretaria</h3></div>
         <div className='containerUl'>
           <ul>

@@ -31,7 +31,7 @@ export const SessaoInfor1 = styled.section`
 
   }
 
-  h2, h3 {
+  h1, h3 {
     text-align: center;
     padding: 15px 0px;
     margin: 0px;
